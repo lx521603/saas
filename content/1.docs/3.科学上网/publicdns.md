@@ -51,13 +51,13 @@ navigation:
    ```
 ## Google 公共 DNS IP 地址
 
-### Google 公共 DNS IP 地址 (IPv4) 如下所示：
+### Google 公共 DNS IP 地址 (IPv4)：
 
 ```
 8.8.8.8
 8.8.4.4
 ```
-### Google 公共 DNS IPv6 地址如下所示：
+### Google 公共 DNS IPv6：
 
 ```
 2001:4860:4860::8888
@@ -74,7 +74,7 @@ https://dns.google/resolve？- JSON API (GET)
 ```
 
 ## Cloudflare:
-### 供IPv4用户使用：
+### IPv4用户使用：
 ```
 1.1.1.1
 1.0.0.1
@@ -82,17 +82,15 @@ https://dns.google/resolve？- JSON API (GET)
 ```
 one.one.one.one
 ```
-### 供IPv6用户使用：
+### IPv6用户使用：
 
 ```
 2606:4700:4700::1111
 
 2606:4700:4700::1001
 ```
-### 而Private DNS服务的主机名为：
+### Private DNS服务的主机名为：
 
 ```
 dot1dot1dot1.cloudflare-dns.com
-
-one.one.one.one
 ```
