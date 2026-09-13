@@ -2,7 +2,7 @@
 title: 科学上网面板搭建
 description: Sing-box 面板（s-ui)，Xray 面板（3x-ui）
 navigation:
-  icon: i-lucide-Plane
+  icon: i-lucide-rocket
 ---
 
 ## Sing-box 面板（s-ui）
