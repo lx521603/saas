@@ -1,6 +1,6 @@
 ---
 title: 科学上网面板搭建
-description: Sing-box 面板（s-ui),Xray 面板（3x-ui）
+description: Sing-box 面板（s-ui)，Xray 面板（3x-ui）
 navigation:
   icon: i-lucide-Plane
 ---
@@ -13,7 +13,7 @@ navigation:
 ---
 class: "[&>div]:*:my-0"
 ---
-### Sing-box 面板（s-ui）
+Sing-box 面板（s-ui）
 
 #code
 ```mdc
@@ -29,7 +29,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.s
 ---
 class: "[&>div]:*:my-0"
 ---
-### Xray 面板（3x-ui）
+Xray 面板（3x-ui）
 
 #code
 ```mdc
