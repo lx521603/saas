@@ -5,6 +5,7 @@ allowBuilds:
   esbuild: false
   unrs-resolver: false
   vue-demi: false
+  better-sqlite3: true
 
 overrides:
   h3: 1.15.11
