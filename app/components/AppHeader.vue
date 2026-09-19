@@ -21,7 +21,7 @@ watch(searchOpen, (value) => {
 
 const items = computed(() => [
   {
-  label: 'Home',
+  label: '首页',
   to: '/'
 }, {
   label: 'Docs',
@@ -30,6 +30,9 @@ const items = computed(() => [
 },  {
   label: 'Blog',
   to: '/blog'
+}, {
+  label: '动态',
+  to: '/ changelog'
 }])
 </script>
 
