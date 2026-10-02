@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -9,15 +9,19 @@ export default defineNuxtConfig({
     'nuxt-og-image'
   ],
 
-  devtools: {
-    enabled: true
-  },
-
+  devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  // 👇 重点修改这里：必须显式声明 pricing collection
   content: {
     experimental: {
       sqliteConnector: 'native'
+    },
+    collections: {
+      pricing: {
+        type: 'data',          // 声明这是一个纯数据文件
+        source: 'pricing.yml', // 必须与 content 目录下的文件名完全一致
+      }
     }
   },
 
@@ -29,9 +33,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: [
-        '/'
-      ],
+      routes: ['/'],
       crawlLinks: true
     }
   },

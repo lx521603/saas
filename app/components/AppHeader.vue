@@ -24,15 +24,21 @@ const items = computed(() => [
   label: '首页',
   to: '/'
 }, {
-  label: 'Docs',
+  label: '产品目录',
   to: '/docs',
   active: isDocs.value
 },  {
   label: 'Blog',
   to: '/blog'
 }, {
-  label: '动态',
-  to: '/ changelog'
+  label: '加盟合作',
+  to: '/introduction'
+},{
+  label: '价格',
+  to: '/pricing'
+},{
+  label: '联系我',
+  to: '/contact'
 }])
 </script>
 
