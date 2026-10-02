@@ -11,7 +11,7 @@
   <UFooter>
     <template #left>
       <p class="text-muted text-sm">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        Velvify.com • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
@@ -33,7 +33,7 @@
         variant="ghost"
       />
       <UButton
-        to="https://github.com/nuxt-ui-templates/saas"
+        to="https://github.com/lx521603/saas"
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="Nuxt UI on GitHub"

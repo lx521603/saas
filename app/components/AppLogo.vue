@@ -16,7 +16,7 @@
 
     <!-- 2. 替换后的自定义文字 -->
     <span class="text-xl font-bold text-gray-900 dark:text-white tracking-tight select-none">
-      Zaeth
+      Velvify.com
     </span>
   </div>
 </template>
