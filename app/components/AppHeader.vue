@@ -28,7 +28,7 @@ const items = computed(() => [
   to: '/docs',
   active: isDocs.value
 },  {
-  label: 'Blog',
+  label: '妆效展示',
   to: '/blog'
 }, {
   label: '加盟合作',
