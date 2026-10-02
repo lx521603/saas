@@ -21,6 +21,14 @@ export default defineNuxtConfig({
     }
   },
 
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
+
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
