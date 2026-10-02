@@ -10,7 +10,7 @@ const page = ref({
     title: '✨ 焕发自信光彩，从 **Dopi** 开始',
     description: '专为亚洲肌肤研发的养肤级彩妆与护肤系列。防晒、美白、持妆三合一，让你无惧镜头，时刻闪耀。',
     links: [
-      { label: '查看全线产品', to: '/products', color: 'primary' },
+      { label: '查看全线产品', to: '/docs/getting-started', color: 'primary' },
       { label: '加入代理招募', to: '/pricing', color: 'neutral', variant: 'subtle' }
     ]
   },
