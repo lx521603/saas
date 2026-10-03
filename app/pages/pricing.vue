@@ -17,13 +17,14 @@ const page = ref({
       button: { 
         label: '成为会员', 
         color: 'primary', 
-        variant: 'subtle' 
+        variant: 'subtle',
+        to: '/contact' 
       },
       features: [
         '享受会员专属内部折扣价',
-        '支持一件代发，零库存压力',
+        '一次购入终身享受特价',
         '专属代理社群日常答疑',
-        '复购享额外积分奖励'
+        '复购享受1件也享受特价'
       ]
     },
     {
@@ -34,7 +35,8 @@ const page = ref({
       scale: true,
       button: { 
         label: '申请特代', 
-        color: 'primary' 
+        color: 'primary',
+        to: '/contact' 
       },
       features: [
         '享受特约代理专属拿货价',
@@ -50,7 +52,8 @@ const page = ref({
       button: { 
         label: '申请市代', 
         color: 'primary', 
-        variant: 'subtle' 
+        variant: 'subtle',
+        to: '/contact' 
       },
       features: [
         '全网最高利润空间与返点政策',
