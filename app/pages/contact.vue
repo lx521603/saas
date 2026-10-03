@@ -11,8 +11,8 @@ useHead({
 const contactInfo = [
   {
     label: '电子邮箱',
-    value: 'x@glee.ch',
-    href: 'mailto:x@glee.ch',
+    value: 'dopi@velvify.com',
+    href: 'mailto:dopi@velvify.com',
     icon: 'i-lucide-mail'
   },
   {
@@ -22,7 +22,7 @@ const contactInfo = [
   },
   {
     label: '服务区域',
-    value: '常驻保山、芒市；不定期在瑞丽、腾冲等地快闪出摊；诚招全国代理',
+    value: '诚招全国代理',
     icon: 'i-lucide-globe'
   }
 ]
