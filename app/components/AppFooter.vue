@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// 上面那堆复杂的 columns 和 onSubmit 逻辑全部删掉，这里甚至可以留空
+// 逻辑部分保持原样或留空即可
 </script>
 
 <template>
@@ -11,32 +11,38 @@
   <UFooter>
     <template #left>
       <p class="text-muted text-sm">
+        <!-- 💡 提示：如果你想把这里的 Velvify.com 改成 Dopi，可以直接修改这里的文字 -->
         Velvify.com • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
     <template #right>
+      <!-- 1. X (原 Twitter) -->
       <UButton
-        to="https://go.nuxt.com/discord"
-        target="_blank"
-        icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://go.nuxt.com/x"
+        to="https://x.com/SaistX"
         target="_blank"
         icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
+        aria-label="X (Twitter)"
         color="neutral"
         variant="ghost"
       />
+      
+      <!-- 2. Instagram -->
       <UButton
-        to="https://github.com/lx521603/saas"
+        to="https://www.instagram.com/viviwang911/"
         target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        icon="i-simple-icons-instagram"
+        aria-label="Instagram"
+        color="neutral"
+        variant="ghost"
+      />
+      
+      <!-- 3. Facebook (直接使用你提供的分享链接，完美跳转) -->
+      <UButton
+        to="https://www.facebook.com/share/1Cwjv4oLZr/"
+        target="_blank"
+        icon="i-simple-icons-facebook"
+        aria-label="Facebook"
         color="neutral"
         variant="ghost"
       />
