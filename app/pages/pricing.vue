@@ -48,7 +48,7 @@ const page = ref({
     {
       title: '市级代理 (市代)',
       description: '适合团队长或实体店主，享受最高级别政策扶持。',
-      price: '¥ 1999',
+      price: '¥ 3999',
       button: { 
         label: '申请市代', 
         color: 'primary', 
