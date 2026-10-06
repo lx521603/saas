@@ -70,7 +70,7 @@ const items = computed(() => [
         color="neutral"
         trailing-icon="i-lucide-arrow-right"
         class="hidden lg:inline-flex"
-        to="mailto:x@mirai.st"
+        to="mailto:vv@velviry.com"
       />
     </template>
 
@@ -110,7 +110,7 @@ const items = computed(() => [
       <UButton
         label="联系我"
         color="neutral"
-        to="mailto:x@mairai.st"
+        to="mailto:vv@mvelvify.com"
         block
       />
       <USeparator class="my-6" />
