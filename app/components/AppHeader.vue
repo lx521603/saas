@@ -65,6 +65,13 @@ const items = computed(() => [
     <template #right>
       <UColorModeButton />
       <UContentSearchButton class="lg:hidden" />
+      <UButton
+        label="联系我"
+        color="neutral"
+        trailing-icon="i-lucide-arrow-right"
+        class="hidden lg:inline-flex"
+        to="mailto:x@mirai.st"
+      />
     </template>
 
     <!-- 👇 移动端导航：使用 NuxtLink 循环，100% 点击有效，且点击后自动关闭菜单 -->
@@ -89,7 +96,23 @@ const items = computed(() => [
           highlight
         />
       </template>
-
+      
+      <USeparator class="my-6" />
+<!--
+      <UButton
+        label="Sign in"
+        color="neutral"
+        variant="subtle"
+        to="/login"
+        block
+        class="mb-3"
+      />-->
+      <UButton
+        label="联系我"
+        color="neutral"
+        to="mailto:x@mairai.st"
+        block
+      />
       <USeparator class="my-6" />
     </template>
   </UHeader>
