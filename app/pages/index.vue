@@ -51,7 +51,7 @@ const page = ref({
     description: '真实用户的反馈，是我们不断前进的动力。',
     items: [
       { quote: '用了 Dopi 粉底液，同事都问我是不是去做了医美，皮肤真的在发光！', user: { name: '林小姐', description: '资深美妆爱好者', avatar: { src: 'https://i.pravatar.cc/128?img=1' } } },
-      { quote: '作为特约代理，总部的扶持真的到位，零基础也能轻松上手，现在已经月入过万啦。', user: { name: '薇薇', description: 'Dopi 特约代理', avatar: { src: 'https://i.pravatar.cc/128?img=5' } } }
+      { quote: '作为特约代理，总部的扶持真的到位，零基础也能轻松上手，现在已经月入过万啦。', user: { name: '木子', description: 'Dopi 特约代理', avatar: { src: 'https://i.pravatar.cc/128?img=5' } } }
     ]
   },
   cta: {
