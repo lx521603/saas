@@ -40,6 +40,10 @@ const items = computed(() => [
   {
     label: '联系我',
     to: '/contact'
+  },
+  {
+    label: '我的动态',
+    to: 'https://91.pt'
   }
 ])
 </script>
