@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-06-30',
 
   nitro: {
-    port: 3001,
+    port: 3002,
     prerender: {
       routes: [
         '/'
