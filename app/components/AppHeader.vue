@@ -43,7 +43,7 @@ const items = computed(() => [
   },
   {
     label: '我的动态',
-    to: 'https://91.pt'
+    to: '/changelog'
   }
 ])
 </script>

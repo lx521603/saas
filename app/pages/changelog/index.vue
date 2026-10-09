@@ -27,9 +27,21 @@ defineOgImage('Saas', { title, description })
         <UChangelogVersion
           v-for="(version, index) in versions"
           :key="index"
-          v-bind="version"
+          :title="version.title"
+          :date="version.date"
+          :description="version.description"
+          :badges="version.badges"
+          :authors="version.authors"
         >
           <template #body>
+            <!-- 👇 核心修改：移除 max-h 和 w-full，改用 max-w-full，让图片以原始比例自由舒展 -->
+            <img 
+              v-if="version.image" 
+              :src="version.image" 
+              :alt="version.title || 'Changelog Image'"
+              class="max-w-full h-auto rounded-xl mb-8 mx-auto block shadow-sm" 
+            />
+            
             <ContentRenderer :value="version.body" />
           </template>
         </UChangelogVersion>
