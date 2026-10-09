@@ -60,7 +60,7 @@ jobs:
             
             echo "=== 优雅重启 Nuxt 服务 ==="
             # 逻辑：如果进程 'nuxt-app' 存在则重启，如果是第一次部署不存在，则直接启动它
-            pm2 restart nuxt-app || pm2 start server/index.mjs --name "nuxt-app"
+            pm2 restart velvify-app --update-env || PORT=3002 pm2 start server/index.mjs --name "velvify-app"
             
             # 保存 PM2 状态，确保 VPS 重启后服务能自启
             pm2 save
