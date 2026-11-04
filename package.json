@@ -12,7 +12,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.150",
+    "@iconify-json/lucide": "^1.2.151",
     "@iconify-json/simple-icons": "^1.2.101",
     "@nuxt/content": "3.16.2",
     "@nuxt/image": "^2.2.1",
@@ -20,9 +20,9 @@
     "@standard-schema/spec": "^1.1.0",
     "@takumi-rs/core": "^2.19.0",
     "@vueuse/nuxt": "^15.0.0",
-    "nuxt": "^4.6.3",
+    "nuxt": "^4.6.4",
     "nuxt-og-image": "^7.0.7",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "^4.3.4",
     "ufo": "^1.6.4",
     "zod": "^4.6.7"
   },
