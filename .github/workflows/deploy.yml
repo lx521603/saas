@@ -38,32 +38,11 @@ jobs:
           # ⚠️ 关键细节：SOURCE 末尾必须有斜杠 "/"
           # 这表示：把 .output 目录【里面的所有内容】同步过去
           # 而不是把 .output 这个文件夹本身同步过去（避免变成 /opt/my-nuxt-app/.output/）
-          SOURCE: ".output/" 
+          SOURCE: ".output/public/" 
           
           # 👇 这里直接写死你的 VPS 目标绝对路径（请根据你的实际情况修改）
-          TARGET: "/opt/velvify/"
+          TARGET: "/opt/www/sites/velvify.com/index/"
           
           # -avz: 归档、显示过程、压缩传输
           # --delete: 极其重要！删除 VPS 上存在但新构建产物中不存在的旧文件，保持绝对干净
           ARGS: "-avz --delete"
-
-      # 🌟 核心步骤：在 VPS 上平滑重启 PM2 服务
-      - name: Restart PM2 service on VPS
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            # 切换到目标目录
-            cd /opt/velvify/
-            
-            echo "=== 优雅重启 Nuxt 服务 ==="
-            # 逻辑：如果进程 'nuxt-app' 存在则重启，如果是第一次部署不存在，则直接启动它
-            pm2 restart velvify-app --update-env || PORT=3002 pm2 start server/index.mjs --name "velvify-app"
-            
-            # 保存 PM2 状态，确保 VPS 重启后服务能自启
-            pm2 save
-            
-            echo "✅ Nuxt 部署完成！当前状态："
-            pm2 status
