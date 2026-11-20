@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 26
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build Nuxt project
-        run: pnpm build
+      - name: Generate Nuxt project (SSG)
+        run: pnpm generate  # 必须是 generate，不是 build
         
       # 🌟 核心步骤：使用 rsync 优雅同步
       - name: Deploy .output to VPS (rsync)
