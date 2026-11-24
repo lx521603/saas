@@ -3,3 +3,14 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
   vue-demi: true
+minimumReleaseAgeExclude:
+  - '@nuxt/kit@4.7.0'
+  - '@nuxt/nitro-server@4.7.0'
+  - '@nuxt/nitro-v3-server@4.7.0'
+  - '@nuxt/schema@4.7.0'
+  - '@nuxt/vite-builder@4.7.0'
+  - '@nuxt/vite-server@4.7.0'
+  - nuxt@4.7.0
+  - '@iconify-json/lucide@1.2.159'
+  - '@iconify-json/simple-icons@1.2.104'
+  - nuxt-og-image@7.2.0
